@@ -1,0 +1,37 @@
+@import '../../index.scss';
+
+.agronet-navbar {
+    @include width-flex;
+    margin: 2rem auto;
+    font-family: 'Inter', sans-serif;
+    &-container {
+        @include flex;
+        justify-content: space-between;
+        width: 60%;
+        margin-top: .5rem;
+        nav  {
+            width: 45%;
+            ul {
+                @include flex;
+                line-height: 2;
+                a {
+                    color: $agronet-primary-color;
+                    font-size: 18px;
+                    font-weight: $agronet-secondary-weight;
+                    font-family: 'Inter', sans-serif;
+                }
+            }
+        }
+        &-logo {
+            font-size: 30px;
+            
+            a {
+                color: $agronet-secondary-color;
+                font-weight: $agronet-secondary-weight;
+            }
+        }
+    }
+    button {
+        @include btn;
+    }
+}

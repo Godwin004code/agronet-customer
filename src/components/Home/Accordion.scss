@@ -1,0 +1,42 @@
+@import '../../index.scss';
+
+.accordion-container {
+    @include width-flex;
+
+    &-answer {
+        width: 50%;
+    }
+
+    &-text {
+        h2 {
+            width: 50%;
+            font-size: 40px;
+            font-weight: $agronet-nursery-weight;
+            line-height: 60px;
+            font-family: 'Red Rose', sans-serif;
+        }
+    }
+
+    .accordion-header {
+        @include flex;
+
+    }
+
+    .accordion-border-line {
+        padding-top: 1rem;
+        border-bottom: 1px solid black;
+
+        h2 {
+            font-size: 25px;
+            font-weight: $agronet-secondary-weight;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .answer {
+            font-size: 19px;
+            font-weight: $agronet-primary-weight;
+            padding: 1rem 0 .7rem 0;
+            font-family: 'Inter', sans-serif;
+        }
+    }
+}

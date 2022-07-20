@@ -1,0 +1,91 @@
+@import '../../index.scss';
+
+.footer-container {
+    background-color: $agronet-primary-color;
+    padding: 2rem 0;
+    font-family: 'Inter', sans-serif;
+
+    .footer-logo {
+        @include width;
+        margin-bottom: 1rem;
+
+        a {
+            text-decoration: none;
+            color: $agronet-nursery-color;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: $agronet-tertiary-weight;
+            font-size: 36px;
+            line-height: 44px;
+        }
+    }
+
+    .footer-links-container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .footer-about-us {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: $agronet-primary-weight;
+            font-size: 18px;
+
+            color: $agronet-nursery-color;
+            width: 30%;
+
+            p {
+                margin-bottom: 1rem;
+            }
+
+        }
+
+        .footer-flex {
+            display: flex;
+            width: 40%;
+            justify-content: space-between;
+        }
+
+        .footer-nav-links ul {
+            font-family: 'Inter';
+            font-style: normal;
+
+            li {
+                line-height: 24px;
+                margin-bottom: .5rem;
+            }
+
+            a {
+                color: $agronet-nursery-color;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: $agronet-secondary-weight;
+
+            }
+        }
+
+        .footer-contacts {
+            h3 {
+                font-weight: $agronet-primary-weight;
+            }
+
+            h2 {
+                font-weight: $agronet-secondary-weight;
+            }
+
+            div {
+                color: $agronet-nursery-color;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .footer-copyright {
+        color: $agronet-nursery-color;
+        font-size: 18px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+}

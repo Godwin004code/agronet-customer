@@ -1,9 +1,19 @@
 
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import Footer from "./components/Footer/Footer";
+import Home from "./components/Home/Home";
+import Navbar from "./components/Navbar/Navbar";
+
+
 function App() {
   return (
-    <div className="App">
-  <h2 className='text-green-900 pt-20' >Godwin, the FE dev</h2>
-    </div>
+    <BrowserRouter>
+    <Navbar />
+    <Routes>
+      <Route path="/" exact element={<Home />} />
+    </Routes>
+    <Footer />
+    </BrowserRouter>
   );
 }
 

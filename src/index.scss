@@ -1,3 +1,61 @@
+$agronet-primary-color: #000000;
+$agronet-secondary-color: #11604A;
+$agronet-tertiary-color: #CAEA69;
+$agronet-nursery-color: #fff;
+$agronet-accordion-color: rgba(202, 234, 105, 0.3);
+$agronet-primary-weight: 400;
+$agronet-secondary-weight: 500;
+$agronet-tertiary-weight: 600;
+$agronet-nursery-weight: 700;
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@mixin width-flex {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin width {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@mixin btn {
+    width: 200px;
+    border: 0;
+    height: 50px;
+    border-radius: 6px;
+    color: white;
+    background-color: $agronet-secondary-color;
+    font-size: 15px;
+    font-weight: $agronet-tertiary-weight;
+    font-family: 'Inter', sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    background-color: green;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
