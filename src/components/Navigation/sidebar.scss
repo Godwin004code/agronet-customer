@@ -1,0 +1,35 @@
+@import '../../index.scss';
+
+.agronet-sidebar {
+    width: 15%;
+    background-color: white;
+    li {
+        width: 90%;
+        margin: 0 auto;
+        height: 50px;
+        font-size: 18px;
+        font-weight: $agronet-primary-weight;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        a {
+            color: #292d32;
+        }
+        cursor: pointer;
+    }
+    li:first-child {
+        margin-top: 1rem;
+    }
+    .active-sidebar-link {
+        background-color: $agronet-secondary-color;
+        
+    }
+    
+    .active-sidebar-link a {
+        color: white;
+    }
+}
+
+
+

@@ -28,16 +28,16 @@ const Footer = () => {
                 <div className='footer-nav-links'>
                 <ul>
                 <li>
-                    <Link to="/about">About Us</Link>
+                    <Link to="#about">About Us</Link>
                 </li>
                 <li>
-                    <Link to="/how-it-works">How it works</Link>
+                    <Link to="#how-it-works">How it works</Link>
                 </li>
                 <li>
-                    <Link to="/faqs">FAQs</Link>
+                    <Link to="#faqs">FAQs</Link>
                 </li>
                 <li>
-                    <Link to="/faqs">Get Started</Link>
+                    <Link to="/get-started">Get Started</Link>
                 </li>
             </ul>
                 </div>

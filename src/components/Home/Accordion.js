@@ -51,7 +51,7 @@ const Accordion = () => {
                         <div className='accordion-border-line' key={item.id}>
                         <section onClick={() => handleClick(index)} className='accordion-header'>
                             <h2>{item.question}</h2>
-                            <div >
+                            <div className='arrows'>
                               {clicked === index ? <FaChevronUp /> : <FaChevronDown />}    
                             </div>
                         </section>

@@ -1,0 +1,28 @@
+.agronet-topbar {
+    background-color: white;
+    margin: 2rem auto;
+    display: flex;
+    width: 90%;
+    &-searchbar {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+
+        &-input {
+            background: #F5F7F9;
+            border-radius: 6px;
+            height: 35px;
+            padding: 0 0 0 .5rem;
+            width: 50%;
+            & input {
+                border: 0;
+                background-color: transparent;
+                height: 100%;
+                padding-left: .5rem;
+                &:focus {
+                    outline: 0;
+                }
+            }
+        }
+    }
+}

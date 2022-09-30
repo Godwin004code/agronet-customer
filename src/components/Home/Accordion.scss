@@ -4,8 +4,9 @@
     @include width-flex;
 
     &-answer {
-        width: 50%;
+        width: 60%;
     }
+
 
     &-text {
         h2 {
@@ -19,7 +20,10 @@
 
     .accordion-header {
         @include flex;
-
+        cursor: pointer;
+        .arrows {
+            margin-top: .3rem;
+        }
     }
 
     .accordion-border-line {

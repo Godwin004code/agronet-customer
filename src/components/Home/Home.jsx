@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Home.scss'
 // icons
 import {HiUser} from "react-icons/hi"
@@ -12,10 +13,19 @@ import img3 from '../../Assets/Ornament 10.jpg'
 import img4 from '../../Assets/Ornament 9.jpg'
 
 import Accordion from './Accordion'
+import Footer from '../Footer/Footer'
+import Navbar from '../Navigation/Navbar'
 
 const Home = () => {
+    
+    const navigate = useNavigate()
+
+    const navigateToGetStarted = () => {
+        navigate('/get-started')
+    }
   return (
     <>
+    <Navbar />
     <section className='agronet-home-hero'>
     <div className='agronet-home-hero-text'>
         
@@ -23,7 +33,7 @@ const Home = () => {
         <p>
             Agronet has made it easier for food producers to get customers and for consumers to get fresh and quality farm produce.
         </p>
-        <button>Get Started</button>
+        <button onClick={navigateToGetStarted}>Get Started</button>
     </div>
     <div>
     <img src={img3} alt="ornament" />
@@ -35,7 +45,7 @@ const Home = () => {
     <section className='agronet-home-namer'>
         <h2>We've built an easy-to-use marketplace.</h2>
     </section>
-    <section className='agronet-about'>
+    <section className='agronet-about' id='about'>
         <div className='agronet-about-text'>
             <h2>About Us</h2>
             <p>
@@ -44,7 +54,7 @@ const Home = () => {
             <p>
                 Agronet is a digital solution many have been expexting and is improving conventional marketing and sales processes as our web app will do the mapping and connection from needy to provider.
             </p>
-            <button>
+            <button onClick={navigateToGetStarted}>
                 Get Started
             </button>
         </div>
@@ -55,7 +65,7 @@ const Home = () => {
             <img src={img1} alt="about us" />
         </div>
     </section>
-    <section className='agronet-steps'>
+    <section className='agronet-steps' id='steps'>
         <div className='agronet-steps-work'>
             <h2>How it works</h2>
             <p>
@@ -97,9 +107,10 @@ const Home = () => {
             </section>
         </div>
     </section>
-    <section className='agronet-accordion'>
+    <section className='agronet-accordion' id='faqs'>
         <Accordion />
     </section>
+    <Footer />
     </>
   )
 }

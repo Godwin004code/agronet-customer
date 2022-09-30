@@ -1,10 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './Navbar.scss'
 
 const Navbar = () => {
+    const navigate = useNavigate()
+
+    const navigateToGetStarted = () => {
+        navigate('/get-started')
+    }
   return (
-    <div className='agronet-navbar'>
+    <section className='agronet-navbar'>
         <div className='agronet-navbar-container'>
         <h2 className='agronet-navbar-container-logo'>
 
@@ -14,22 +19,23 @@ const Navbar = () => {
         </h2>
         <nav>
             <ul>
+                
                 <li>
-                    <Link to="/about">About Us</Link>
+                    <Link to="#about">About Us</Link>
                 </li>
                 <li>
-                    <Link to="/how-it-works">How it works</Link>
+                    <Link to="#steps">How it works</Link>
                 </li>
                 <li>
-                    <Link to="/faqs">FAQs</Link>
+                    <Link to="#faqs">FAQs</Link>
                 </li>
             </ul>
         </nav>
         </div>
         <div>
-            <button>Get Started</button>
+            <button onClick={navigateToGetStarted}>Get Started</button>
         </div>
-    </div>
+    </section>
   )
 }
 

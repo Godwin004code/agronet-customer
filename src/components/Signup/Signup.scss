@@ -1,0 +1,169 @@
+@import '../../index.scss';
+
+.account-container {
+    @include flex;
+    height: 100%;
+    font-family: 'Red Rose', sans-serif;
+
+    &-banner {
+        padding: 4rem 3rem;
+        width: 35%;
+        background-color: $agronet-secondary-color;
+        
+
+        h2 {
+            color: $agronet-nursery-color;
+            font-weight: $agronet-secondary-weight;
+            font-size: 30px;
+
+            span {
+                color: $agronet-tertiary-color;
+            }
+        }
+        
+
+        p,
+        h3 {
+            color: $agronet-nursery-color;
+        }
+
+        h3 {
+            font-weight: $agronet-nursery-weight;
+            font-family: 'Red Rose', serif;
+            font-size: 35px;
+            margin: 3rem 0;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: $agronet-primary-weight;
+            font-family: 'Inter', serif;
+        }
+    }
+
+    &-form {
+        width: 50%;
+        .name-container {
+            @include flex;
+            width: 60%;
+            & div {
+                width: 45%;
+                & input {
+                    width: 100%;
+                }
+            } 
+        }
+        &-option {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 2rem;
+            margin-right: 30px;
+            h2 {
+                font-weight: $agronet-secondary-weight;
+                font-size: 17px;
+                margin-right: 20px;
+                margin-top: 10px;
+            }
+
+            button {
+                background-color: $agronet-secondary-color;
+                height: 40px;
+                
+                border: 0;
+                width: 15%;
+                border-radius: 6px;
+                a {
+                    color: white;
+                }
+            }
+        }
+
+        label {
+            font-family: 'Inter', serif;
+            font-weight: $agronet-primary-weight;
+            font-size: 18px;
+            color: $agronet-primary-color;
+            
+        }
+
+
+
+        &-children {
+            padding: 2rem 0;
+
+            .or {
+                width: 55%;
+                font-weight: $agronet-secondary-weight;
+                font-size: 18px;
+                color: #666666;
+                text-align: center;
+            }
+
+            h2 {
+                font-weight: $agronet-secondary-weight;
+                font-size: 32px;
+                margin-bottom: 1rem;
+            }
+
+            button {
+                width: 60%;
+                background-color: #f1f1f1;
+                border: 0;
+                height: 50px;
+                border-radius: 6px;
+                &:nth-child(2) {
+                    margin-bottom: 2rem;
+                }
+
+                &:nth-child(3) {
+                    background-color: $agronet-secondary-color;
+                    color: white;
+                }
+            }
+
+            form {
+                margin: 2rem 0 0 0;
+
+                input {
+                    border: 1px solid #666666;
+                    border-radius: 6px;
+                    height: 40px;
+                    width: 60%;
+                    padding-left: 10px;
+                    display: block;
+                    &::placeholder {
+                        color: #666666;
+                        font-size: 15px;
+                        font-weight: $agronet-primary-weight;
+                    }
+
+                    &:focus {
+                        outline: 0;
+                    }
+                }
+
+                .pwd-container {
+                    display: flex;
+                    border: 1px solid #666666;
+                    width: 60%;
+                    justify-content: space-between;
+                    border-radius: 6px;
+                    margin-bottom: 2rem;
+
+                    input {
+                        border: 0;
+                        width: 100%;
+
+                    }
+
+                    div {
+                        margin: 10px 10px 0px 0;
+                    }
+                }
+
+
+
+            }
+        }
+    }
+}
