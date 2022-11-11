@@ -1,0 +1,53 @@
+.button {
+    border-radius: 6px;
+    padding: 12px 50px;
+    border: 1px solid #11604A;
+    background-color: #11604A;
+    color: white;
+}
+
+.order-h2 {
+    width: 90%;
+    margin: 1rem auto;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+
+}
+.delivery {
+    width: 90%;
+    margin: 0 auto;
+    background: rgba(245, 247, 249, 0.4);
+border-radius: 6px;
+padding: 15px 20px;
+display: flex;
+justify-content: space-between;
+.user-name {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+}
+.address {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+color: #646464;
+margin-left: 1rem;
+}
+& div {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #11604A;
+
+}
+}
+.delivery-btn {
+    
+    margin: 1.5rem 0 2rem 0;
+    margin-left: 5%;
+}

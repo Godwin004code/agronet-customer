@@ -1,0 +1,94 @@
+
+.payment-details-h2 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+width: 90%;
+margin: 1.5rem auto;
+}
+
+.payment-details-area{
+    background: rgba(245, 247, 249, 0.4);
+border-radius: 6px;
+width: 90%;
+margin: 0 auto;
+padding: 15px;
+margin-bottom: 2rem;
+&-h2 {
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+margin-bottom: 1rem;
+}
+&-flex {
+    display: flex;
+    justify-content: space-between;
+    &-form {
+        width: 60%;
+        &-inner{
+            display: flex;
+            justify-content: space-between;
+            & div {
+                width: 48%;
+            }
+        }
+        label {
+            font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+        }
+        input {
+            margin-top: .6rem;
+            margin-bottom: 1rem;
+            width: 100%;
+            border: 1px solid #E0E0E0;
+border-radius: 6px;
+padding: 12px 10px;
+&:focus {
+    outline: 0;
+}
+        }
+    }
+    &-pay {
+        width: 30%;
+        border: 1px solid #E0E0E0;
+border-radius: 6px;
+padding: 15px;
+        & h2 {
+            font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+        }
+        & div:nth-child(5) {
+            margin-top: 3rem;
+        }
+        & div{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            & h3 {
+                font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+color: #646464;
+            }
+            & h4 {
+                font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+
+            }
+        }
+
+        button {
+            margin: 1rem 0;
+        }
+    }
+}
+}

@@ -3,9 +3,11 @@
 .agronet-dashboard-flex {
     display: flex;
 }
+
 .agronet-dashboard-area {
     background-color: #f1f1f1;
     width: 85%;
+
     .hero {
         background-color: white;
         width: 90%;
@@ -13,30 +15,36 @@
         display: flex;
         justify-content: space-between;
         padding: 1rem 0;
+
         &-text {
             width: 50%;
             height: 100%;
             margin-left: 2rem;
+
             h2 {
                 margin-top: 1rem;
                 font-family: 'Red Rose';
                 font-size: 40px;
             }
+
             p {
                 margin: 1rem 0 1.5rem 0;
                 font-family: 'Inter';
                 font-size: 18px;
             }
+
             button {
                 height: 40px;
                 border: 0;
                 border-radius: 6px;
                 padding: 0 20px;
             }
+
             .submit-button {
                 background-color: $agronet-secondary-color;
                 color: white;
             }
+
             .upload-button {
                 margin-left: 10px;
                 background-color: white;
@@ -44,8 +52,89 @@
                 border: 1px solid $agronet-secondary-color;
             }
         }
+
         &-img {
             margin-right: 2rem;
+        }
+    }
+
+    .recent-product {
+        &-header {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            padding: 5px 0px;
+        }
+
+        &-amount {
+            background: rgba(17, 96, 74, 0.2);
+            border-radius: 20px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            color: #11604A;
+            padding: 5px 10px;
+            margin-left: 2rem;
+        }
+
+        width: 90%;
+        margin: 1.7rem auto;
+
+        .items {
+            margin-top: 1.3rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        
+            .single-item {
+                width: 23%;
+                margin-bottom: 1rem;
+a {
+    color: black;
+}
+                &-img {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                &-des {
+                    background-color: white;
+                    padding: 15px;
+
+                    &-header {
+                        display: flex;
+                        justify-content: space-between;
+
+                        &-price {
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                        }
+
+                        &-location {
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+
+                            color: #999999;
+                        }
+                    }
+                    &-name {
+                        font-style: normal;
+font-weight: 400;
+font-size: 18px;
+margin-top: 1rem;
+                    }
+                }
+            }
         }
     }
 }

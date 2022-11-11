@@ -1,0 +1,29 @@
+@import '../../index.scss';
+
+.agronet-dashboard-area {
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 1.7rem auto;
+
+        & h2 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+        }
+
+        & button {
+            background: #11604A;
+            border-radius: 6px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            color: #FFFFFF;
+            border: 0;
+            padding: 10px;
+        }
+    }
+}
